@@ -10,7 +10,7 @@ import ssl
 
 from datetime import datetime
 
-ctx = ssl._create_unverified_context(cafile=certifi.where())
+ctx = ssl._create_unverified_context(cafile=certifi.where()) # mumble mumble mumble fa cose per far sì che l'autenticazione funzioni
 geopy.geocoders.options.default_ssl_context = ctx
 
 geolocator = Nominatim(scheme="https", user_agent="Test")
